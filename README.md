@@ -5,9 +5,9 @@
 *Projeto integrador baseado em metodologia ágil e desenvolvimento de hard skills.*
 
 
-**Pré-requisitos:**
+**Situação Problema:**
 
-Situação problema: O cliente solicitou um E-commerce para a venda de material didático.
+O cliente solicitou um E-commerce para a venda de material didático.
 
 1. Matemática Discreta (Grafos e Lógica);
 
