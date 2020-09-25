@@ -33,9 +33,9 @@ O cliente solicitou um E-commerce para a venda de material didático.
 - Figma.
 
 ## Sprints:
-:heavy_check_mark: Sprint 0 ;
+:heavy_check_mark: [Sprint 0](https://github.com/RoyaltyDev/Projeto_integrador_2020-2/tree/master/Split%200);
 
-## Equipe 2:
+## Desenvolvedores:
  Danielle Brito Evangelista – [Git Hub](https://github.com/DanielleBritoEvangelista), [LinkedIn]
 
  Elias Ferreira de Faria - [Git Hub](https://github.com/elias31072002), [LinkedIn](https://www.linkedin.com/in/elias-ferreira-525ba41b6/)
