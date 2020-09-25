@@ -34,18 +34,18 @@ O cliente solicitou um E-commerce para a venda de material didático contendo:
 - Draw.io. 
 
 ## Sprints:
-:heavy_check_mark: [Sprint 0](https://github.com/RoyaltyDev/Projeto_integrador_2020-2/tree/master/Split%200);
+:white_check_mark: [Sprint 0](https://github.com/RoyaltyDev/Projeto_integrador_2020-2/tree/master/Split%200);
 
-:white_check_mark: Sprint 1;
+Sprint 1;
 
-:white_check_mark: Sprint 2;
+Sprint 2;
 
-:white_check_mark: Sprint 3;
+Sprint 3;
 
-:white_check_mark: Sprint 4.
+Sprint 4.
 
 ## Desenvolvedores:
-Guilherme Cleyton Pereira (Scrum Master) – [Git Hub](https://github.com/gui863), [LinkedIn];
+Guilherme Cleyton Pereira (Scrum Master) – [Git Hub](https://github.com/gui863), [LinkedIn](https://www.linkedin.com/in/guilherme-cleyton-7993aa7a/);
 
 Danielle Brito Evangelista – [Git Hub](https://github.com/DanielleBritoEvangelista), [LinkedIn];
 
