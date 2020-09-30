@@ -22,11 +22,11 @@ O cliente solicitou um E-commerce para a venda de material didático contendo:
 
 **Com os seguintes requisitos:**
 
-- cadastro de usuário;
-- cadastro de conteúdo;
-- carrinho de compras;
+- Cadastro de usuário;
+- Cadastro de conteúdo;
+- Carrinho de compras;
 - Interface para saldo de credito;
-- relatório de vendas.
+- Relatório de vendas.
 
 **Realizado com:**
 - [Figma](https://www.figma.com);
