@@ -113,37 +113,91 @@ button.slick-next {
     right: 14%;
 }
 .imging{
-    height: 377.72px;
+    width: 50%;
 }
 .titleing{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 30px;
     float: right;
-    margin-right: 300px;
-    margin-top: 30px;
+    width: 25%;
+
 }
 .txting{
     float: right;
-    margin-right: -250px;
     margin-top: 100px;
+    width: 25%;
+    text-align: justify;
+    height: 25%;
 }
 .imgptg{
     float: right;
-    height: 377.72px;
+    width: 50%;
+}
+.titlept{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    width: 50%;
+}
+.txtpt{
+    margin-top: 10px;
+    width: 50%;
+    text-align: justify;
 }
 .imgmtm{
-    height: 377.72px;
+    width: 50%;
+}
+.titlemtm{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    
+    margin-left: 29%;
+}
+.txtmtm{
+    margin-top: 10px;
+    width: 50%;
+    text-align: justify;
+    float: right;
 }
 .labh{
     float: right;
-    height: 377.72px;
+    width: 50%;
+}
+.titlelab{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    width: 50%;
+}
+.txtlab{
+    margin-top: 10px;
+    width: 50%;
+    text-align: justify;
 }
 .imgarq{
-    height: 377.72px;
+    width: 50%;
+}
+.titlearq{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    width: 50%;
+}
+.txtarq{
+    margin-top: 10px;
+    width: 50%;
+    text-align: justify;
 }
 .imglgc{
     float: right;
-    height: 377.72px;
+    width: 50%;
+}
+.titlelgc{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    width: 50%;
+}
+.txtlgc{
+    margin-top: 10px;
+    width: 50%;
+    text-align: justify;
 }
 
 
