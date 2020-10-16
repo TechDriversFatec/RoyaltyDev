@@ -53,7 +53,7 @@ O cliente solicitou um E-commerce para a venda de material didático contendo:
 
 ## Planejamento de Sprints
 
-<h1 align="center"><img src = "/sprint 0/Cronograma.png" width="192" height="480" /></h1>
+<h1 align="center"><img src = "/imagens/Cronograma.png" width="192" height="480" /></h1>
 
 ## Desenvolvedores
 
