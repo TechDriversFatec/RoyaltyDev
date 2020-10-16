@@ -1,4 +1,8 @@
-# Equipe 2 – Royalty Developers
+<h1 ><img src = "/imagens/fatec-educa.png" width="800" height="200" /></h1>
+
+<br>
+
+<h1 align="center">Equipe 2 – Royalty Developers</h1>
 
 ## Projeto Integrador
 
@@ -32,18 +36,25 @@ O cliente solicitou um E-commerce para a venda de material didático contendo:
 
 - [Figma](https://www.figma.com);
 - [Draw.io](http://draw.io/).
+- HTML
+- Bootstrap
 
 ## Sprints
 
 :white_check_mark: [Sprint 0](https://github.com/RoyaltyDev/Projeto_integrador_2020-2/tree/master/Split%200): ([*link para projeto*](https://www.figma.com/file/M4dPivo8PlkPN2uRZq9tRt/Prototipo-Projeto-integrador?node-id=0%3A1));
 
-:black_square_button: Sprint 1;
+:black_square_button: [Sprint 1](https://github.com/RoyaltyDev/Projeto_integrador_2020-2/tree/master/Sprint%201);
 
 :black_square_button: Sprint 2;
 
 :black_square_button: Sprint 3;
 
 :black_square_button: Sprint 4.
+
+## Planejamento de Sprints
+
+<h1 align="center"><img src = "/imagens/Planejamento.png" width="192" height="480" /></h1>
+
 
 ## Desenvolvedores
 
