@@ -41,7 +41,7 @@ O cliente solicitou um E-commerce para a venda de material didático contendo:
 
 ## Sprints
 
-:white_check_mark: [Sprint 0](https://github.com/RoyaltyDev/Projeto_integrador_2020-2/tree/master/Split%200): ([*link para projeto*](https://www.figma.com/file/M4dPivo8PlkPN2uRZq9tRt/Prototipo-Projeto-integrador?node-id=0%3A1));
+:white_check_mark: [Sprint 0](https://github.com/RoyaltyDev/Projeto_integrador_2020-2/tree/master/Sprint%200): ([*link para projeto*](https://www.figma.com/file/M4dPivo8PlkPN2uRZq9tRt/Prototipo-Projeto-integrador?node-id=0%3A1));
 
 :black_square_button: [Sprint 1](https://github.com/RoyaltyDev/Projeto_integrador_2020-2/tree/master/Sprint%201);
 
