@@ -55,6 +55,10 @@ O cliente solicitou um E-commerce para a venda de material didático contendo:
 
 <h1 align="center"><img src = "/imagens/Cronograma.png" width="192" height="480" /></h1>
 
+## Backlog
+
+<h1 align="center"><img src="/imagens/backlog.jpg" width="500" height="800"/></h1>
+
 ## Desenvolvedores
 
 Guilherme Cleyton Pereira (Scrum Master) – [Git Hub](https://github.com/gui863), [LinkedIn](https://www.linkedin.com/in/guilherme-cleyton-7993aa7a/);
