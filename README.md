@@ -57,7 +57,7 @@ O cliente solicitou um E-commerce para a venda de material didático contendo:
 
 ## Backlog
 
-<h1 align="center"><img src="/imagens/backlog.jpg" width="500" height="800"/></h1>
+<h1 align="center"><img src="/imagens/backlog.jpg" width="600" height="800"/></h1>
 
 ## Desenvolvedores
 
