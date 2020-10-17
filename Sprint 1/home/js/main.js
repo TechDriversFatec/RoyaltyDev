@@ -1,5 +1,5 @@
 function redirecionar_ing() {
-    window.open("https://fatecspgov-my.sharepoint.com/:w:/g/personal/lucas_prado8_fatec_sp_gov_br/EZEKpao3KVpCkvCu-77Yv9cBJ6sMKVrTpnFMPCy8UPCWcg?e=qMYMTA");
+    window.open("#");
 }
 
 function redirecionar_mat() {
