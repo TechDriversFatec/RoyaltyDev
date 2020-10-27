@@ -29,6 +29,8 @@ urlpatterns = [
     path('matematica/', views.matematica),
     path('portugues/', views.portugues),
     path('programacao/', views.programacao),
+    path('profileuser/', views.profile_user),
+    path('register/', views.register),
     path('', views.index)
 
 ]

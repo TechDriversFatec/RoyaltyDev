@@ -10,9 +10,18 @@ def index(request):
     return render(request, 'home.html')
 
 
+def register(request):
+    return render(request, 'signup.html')
+
+
 @login_required(login_url='/login/')
 def logado(request):
     return render(request, 'homelogado.html')
+
+
+@login_required(login_url='/login/')
+def profile_user(request):
+    return render(request, 'user_profile.html')
 
 
 @login_required(login_url='/login/')
