@@ -6,7 +6,7 @@ from .models import Usuario, Permissoes
 
 @admin.register(Usuario)
 class UsuarioAdmin(admin.ModelAdmin):
-    list_display = ['id', 'user', 'Nome']
+    list_display = ['id', 'user', 'nome']
 
 
 @admin.register(Permissoes)

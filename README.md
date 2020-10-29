@@ -2,7 +2,7 @@
 
 <br>
 
-<h1 align="center">Equipe 2 – Royalty Developers</h1>
+<h1 align="center">Equipe 2 – EducaHelp</h1>
 
 ## Projeto Integrador
 
@@ -35,15 +35,18 @@ O cliente solicitou um E-commerce para a venda de material didático contendo:
 **Realizado com:**
 
 - [Figma](https://www.figma.com);
-- [Draw.io](http://draw.io/).
-- HTML
-- Bootstrap
+- [Draw.io](http://draw.io/);
+- HTML;
+- CSS;
+- Bootstrap;
+- Django;
+- Python;
 
 ## Sprints
 
 :white_check_mark: [Sprint 0](https://github.com/RoyaltyDev/Projeto_integrador_2020-2/tree/master/Sprint%200): ([*link para projeto*](https://www.figma.com/file/M4dPivo8PlkPN2uRZq9tRt/Prototipo-Projeto-integrador?node-id=0%3A1));
 
-:black_square_button: [Sprint 1](https://github.com/RoyaltyDev/Projeto_integrador_2020-2/tree/master/Sprint%201);
+:white_check_mark: [Sprint 1](https://github.com/RoyaltyDev/Projeto_integrador_2020-2/tree/master/Sprint%201);
 
 :black_square_button: Sprint 2;
 

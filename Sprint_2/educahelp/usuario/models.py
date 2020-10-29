@@ -124,7 +124,7 @@ class Permissoes(models.Model):
 
 
 class Usuario(models.Model):
-    Nome = models.CharField(max_length=100)
+    nome = models.CharField(max_length=100)
     Cidade = models.CharField(max_length=100)
     CPF = models.CharField(max_length=11)
     Telefone = models.CharField(max_length=11)

@@ -1,0 +1,31 @@
+<form method="post">
+                        {% csrf_token %}
+                        <div>
+                        <div class="form-row">
+                            <div class="col-lg-7">
+                                <input type="name" placeholder="Nome completo" class="form-control my-3 p-4">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-lg-7">
+                                <input type="email" placeholder="E-mail" class="form-control my-1 p-4">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-lg-7">
+                                <input type="password" placeholder="Senha" class="form-control my-3 p-4">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-lg-7">
+                                <input type="password" placeholder="Confirmar senha" class="form-control my-1 p-4">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-lg-7">
+                                <button type="submit" class="btn1 mt-3 mb-4">Cadastrar</button>
+                            </div>
+                        </div>
+                        </div>
+                        <p>Já é cadastrado? <a href="/accounts/login/">Entre aqui</a></p>
+                    </form>
