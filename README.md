@@ -4,11 +4,34 @@
 
 <h1 align="center">Equipe 2 – EducaHelp</h1>
 
-## Projeto Integrador
+<br>
 
+<h2 align="center"> 
+	🚧  Em desenvolvimento...  🚧
+</h2>
+
+<br>
+<br>
+
+Tabela de conteúdos
+=================
+<!--ts-->
+   * [Sobre](#sobre)
+   * [Situação Problema](#problema)
+   * [Tecnologias](#tecnologias)
+   * [Sprints Status](#sprints)
+   * [Planejamento de Sprints](#planejamento-de-sprints)
+   * [Backlog](#backlog)
+   * [Requesitos](#requisitos)
+        * [Abrindo Servidor](#abrindo-servidor)
+   * [Desenvolvedores](#desenvolvedores)
+   
+<!--te-->
+
+# Sobre
 *Projeto integrador baseado em metodologia ágil, procurando desenvolver Proatividade, Autonomia, Colaboração e Entrega de resultados*
 
-**Situação Problema:**
+# Problema
 
 O cliente solicitou um E-commerce para a venda de material didático contendo:
 
@@ -24,7 +47,7 @@ O cliente solicitou um E-commerce para a venda de material didático contendo:
 
 1. Lógica de Programação.
 
-**Com os seguintes requisitos:**
+Com os seguintes requisitos:
 
 - Cadastro de usuário;
 - Cadastro de conteúdo;
@@ -32,7 +55,7 @@ O cliente solicitou um E-commerce para a venda de material didático contendo:
 - Interface para saldo de credito;
 - Relatório de vendas.
 
-**Realizado com:**
+# Tecnologias:
 
 - [Figma](https://www.figma.com);
 - [Draw.io](http://draw.io/);
@@ -42,7 +65,7 @@ O cliente solicitou um E-commerce para a venda de material didático contendo:
 - Django;
 - Python;
 
-## Sprints
+# Sprints
 
 :white_check_mark: [Sprint 0](https://github.com/RoyaltyDev/Projeto_integrador_2020-2/tree/master/Sprint%200): ([*link para projeto*](https://www.figma.com/file/M4dPivo8PlkPN2uRZq9tRt/Prototipo-Projeto-integrador?node-id=0%3A1));
 
@@ -54,15 +77,42 @@ O cliente solicitou um E-commerce para a venda de material didático contendo:
 
 :black_square_button: Sprint 4.
 
-## Planejamento de Sprints
+# Planejamento de Sprints
 
 <h1 align="center"><img src = "/imagens/cronogramas.png" width="800" height="2000" /></h1>
 
-## Backlog
+# Backlog
 
 <h1 align="center"><img src="/imagens/backlog.jpg" width="600" height="800"/></h1>
 
-## Desenvolvedores
+# Requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+
+[GIT](https://git-scm.com/), [Python](https://www.python.org/), [Django](https://www.djangoproject.com/download/).
+
+_versão do python = 3.8.5_ <br>
+_versão do django = 3.1.0_
+
+## Abrindo servidor
+
+```bash
+# Clone este repositório
+$ git clone https://github.com/RoyaltyDev/Projeto_integrador_2020-2.git
+
+# Instale as dependencias
+$ pip install <requirements.txt>
+
+# Acesse a pasta do projeto
+$ cd <Path-do-projeto>
+
+# Inicie o servidor
+$ pyhton manage.py runserver
+
+# o servidor será iniciado em localhost
+```
+
+# Desenvolvedores
 
 Guilherme Cleyton Pereira (Scrum Master) – [Git Hub](https://github.com/gui863), [LinkedIn](https://www.linkedin.com/in/guilherme-cleyton-7993aa7a/);
 
