@@ -10,11 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
+from django.contrib.messages import constants
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,9 +36,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'usuario',
     'accounts',
     'pages',
+    'produto',
+    'pedido',
+    'perfil',
+
+
+    # TODO: Remover debug toolbar
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -50,6 +55,13 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+
+
+
+
+    # TODO: Remover debug toolbar
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'educahelp.urls'
@@ -72,7 +84,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'educahelp.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
@@ -82,7 +93,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
@@ -102,13 +112,12 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-BR'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
@@ -116,12 +125,47 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = [
+    os.path.join('templates/static')
+]
 
 LOGIN_REDIRECT_URL = '/'
 
 LOGOUT_REDIRECT_URL = '/accounts/login'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+MESSAGE_TAGS = {
+    constants.DEBUG: 'alert-info',
+    constants.ERROR: 'alert-danger',
+    constants.INFO: 'alert-info',
+    constants.SUCCESS: 'alert-success',
+    constants.WARNING: 'alert-warning',
+}
+
+# Sessão em dias: 60s * 60m * 24h * 1d
+SESSION_COOKIE_AGE = 60 * 60 * 24 * 7
+
+# Salvar a cada requisição
+SESSION_SAVE_EVERY_REQUEST = False
+
+# Serializer - Padrão JSON
+# SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
+
+# Para sessions em arquivos ao invés da base de dados
+# SESSION_ENGINE = "django.contrib.sessions.backends.file"
+# SESSION_FILE_PATH = '/home/luizotavio/Desktop/temp'
+
+
+# TODO: Remover debug toolbar
+INTERNAL_IPS = [
+    # ...
+    '127.0.0.1',
+    # ...
+]
