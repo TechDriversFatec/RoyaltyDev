@@ -34,15 +34,15 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="https://raw.githubusercontent.com/RoyaltyDev/Projeto_integrador_2020-2/master/Sprint_2/educahelp/imagens/BANNER.png" alt="Image">
+        <img src="https://raw.githubusercontent.com/RoyaltyDev/Projeto_integrador_2020-2/master/imagens/BANNER.png" alt="Image">
         <div class="carousel-caption">
-          <h3>O site que da um help na sua educação<br/><p class="spc">espaço></p> </h3>
+          <h3>O site que da um help na sua educação<br/><p class="spc">espaço</p> </h3>
           <p></p>
         </div>      
       </div>
 
       <div class="item">
-        <img src="https://raw.githubusercontent.com/RoyaltyDev/Projeto_integrador_2020-2/master/Sprint_2/educahelp/imagens/matematicabp.png" alt="Image">
+        <img src="https://raw.githubusercontent.com/RoyaltyDev/Projeto_integrador_2020-2/master/imagens/matematicac1.jpg" alt="Image">
         <div class="carousel-caption">
           <h3></h3>
           <p></p>
@@ -69,13 +69,13 @@
                 {% endif %}
 
                 <div class="card-body">
-                    <h5 class="card-title">{{ produto.nome }}</h5>
+                    <h5 class="card-title"><strong>{{ produto.nome }}</strong></h5>
                     <p class="card-text">{{ produto.descricao_curta }}</p>
-                    <div class="container product-price-block text-center">
+                    <div class="container product-price-block ">
 
                         {% if produto.preco_marketing_promocional %}
                         <span class="product-price">
-                            {{ produto.preco_marketing_promocional|formata_preco }}
+                            <strong>{{ produto.preco_marketing_promocional|formata_preco }}</strong>
                         </span>
                         <span class="product-old-price text-muted">
                             {{ produto.preco_marketing|formata_preco }}
@@ -87,11 +87,10 @@
                         {% endif %}
 
                     </div>
-                </div>
+                  </div>
                 <div class="card-footer bg-transparent border-top-light-custom text-center">
                     <a href="{% url 'produto:detalhe' produto.slug %}" class="btn btn-primary btn-sm m-1 btn-block">
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                        Comprar
+                        Detalhes
                     </a>
                 </div>
             </div>
