@@ -22,7 +22,7 @@ Tabela de conteúdos
    * [Sprints Status](#sprints)
    * [Planejamento de Sprints](#planejamento-de-sprints)
    * [Backlog](#backlog)
-   * [Requesitos](#requisitos)
+   * [Requisitos](#requisitos)
         * [Abrindo Servidor](#abrindo-servidor)
    * [Desenvolvedores](#desenvolvedores)
    
@@ -107,7 +107,7 @@ $ pip install <requirements.txt>
 $ cd <Path-do-projeto>
 
 # Inicie o servidor
-$ pyhton manage.py runserver
+$ python manage.py runserver
 
 # o servidor será iniciado em localhost
 ```
