@@ -60,7 +60,7 @@ Com os seguintes requisitos:
 - [Figma](https://www.figma.com);
 - [Draw.io](http://draw.io/);
 - [HTML]();
-- [CSS];
+- [CSS]();
 - [Bootstrap](https://getbootstrap.com/);
 - [Django](https://www.djangoproject.com/);
 - [Python](https://www.python.org/);
@@ -107,7 +107,7 @@ $ cd <Path-do-projeto>
 $ python -m venv <nome da virtual env>
 
 #entre na pasta da virtual env
-cd <pasta da venv>
+$ cd <pasta da venv>
 
 # ative a virtual env
 $ ./Scripts/activate
