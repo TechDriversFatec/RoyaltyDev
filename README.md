@@ -59,11 +59,11 @@ Com os seguintes requisitos:
 
 - [Figma](https://www.figma.com);
 - [Draw.io](http://draw.io/);
-- HTML;
-- CSS;
-- Bootstrap;
-- Django;
-- Python;
+- [HTML]();
+- [CSS];
+- [Bootstrap](https://getbootstrap.com/);
+- [Django](https://www.djangoproject.com/);
+- [Python](https://www.python.org/);
 
 # Sprints
 
@@ -100,11 +100,23 @@ _versão do django = 3.1.0_
 # Clone este repositório
 $ git clone https://github.com/RoyaltyDev/Projeto_integrador_2020-2.git
 
+# Acesse a pasta do projeto
+$ cd <Path-do-projeto>
+
+# Crie uma virtual env
+$ python -m venv <nome da virtual env>
+
+#entre na pasta da virtual env
+cd <pasta da venv>
+
+# ative a virtual env
+$ ./Scripts/activate
+
 # Instale as dependencias
 $ pip install <requirements.txt>
 
-# Acesse a pasta do projeto
-$ cd <Path-do-projeto>
+# Vá para a pasta do projeto
+$ cd <pasta do projeto>
 
 # Inicie o servidor
 $ python manage.py runserver
