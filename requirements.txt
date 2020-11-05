@@ -2,3 +2,4 @@ Pillow
 crispy_forms
 Pil
 django-debug-toolbar
+Django
