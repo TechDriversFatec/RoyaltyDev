@@ -56,6 +56,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item " href="#">Perfil</a>
+                    <a class="dropdown-item " href="{% url 'produto:conteudo_create' %}">Adicionar conteúdo</a>
                     <a class="dropdown-item " href="{% url 'pedido:lista' %}">Meus pedidos</a>
                     <a class="dropdown-item" href="{% url 'perfil:criar' %}">Atualizar meus dados</a>
                     <a class="dropdown-item" href="{% url 'perfil:logout' %}">Sair</a>
