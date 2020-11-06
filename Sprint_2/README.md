@@ -4,10 +4,10 @@
 
 <h1 align="center">Equipe 2 – EducaHelp</h1>
 
-**Sobre**<br/>
+# Sobre<br/>
 Durante o período da Sprint 2 a equipe teve como foco a criação do front-end e do back-end, possibilitando então, visualizar como será a interação do cliente com a plataforma, e a criação dos conteúdos que serão disponibilizados para compra
 
-**Desenvolvido**
+# Desenvolvido
 
 * Páginas de conteúdos;
 * Página para edição de dados do usuário;
@@ -17,7 +17,7 @@ Durante o período da Sprint 2 a equipe teve como foco a criação do front-end 
 * Login/Cadastro;
 * Sistema de compras
 
-**Tecnologias**
+# Tecnologias
 * HTML;
 * CSS;
 * JavaScript;
