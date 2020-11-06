@@ -56,7 +56,9 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item " href="{% url 'perfil:criar' %}">Perfil</a>
+                    {% if perms.global_permissions.pode_adicionar_conteudo %}
                     <a class="dropdown-item " href="{% url 'produto:conteudo_create' %}">Adicionar conteúdo</a>
+                    {% endif %}
                     <a class="dropdown-item " href="{% url 'pedido:lista' %}">Meus pedidos</a>
                     <a class="dropdown-item" href="{% url 'perfil:logout' %}">Sair</a>
                 </div>

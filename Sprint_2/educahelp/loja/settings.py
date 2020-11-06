@@ -153,3 +153,6 @@ SESSION_SAVE_EVERY_REQUEST = False
 
 # Serializer - Padrão JSON
 # SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
+
+
+INSTALLED_APPS += ('global_permissions',)

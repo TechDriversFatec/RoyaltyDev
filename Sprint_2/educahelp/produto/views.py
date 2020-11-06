@@ -11,6 +11,7 @@ from .models import Produto
 from .forms import Postform
 from . import models
 from perfil.models import Perfil
+from django.core.exceptions import PermissionDenied
 
 
 class ListaProdutos(ListView):
@@ -109,9 +110,9 @@ class AdicionarAoCarrinho(View):
 
             carrinho[variacao_id]['quantidade'] = quantidade_carrinho
             carrinho[variacao_id]['preco_quantitativo'] = preco_unitario * \
-                                                          quantidade_carrinho
+                quantidade_carrinho
             carrinho[variacao_id]['preco_quantitativo_promocional'] = preco_unitario_promocional * \
-                                                                      quantidade_carrinho
+                quantidade_carrinho
         else:
             carrinho[variacao_id] = {
                 'produto_id': produto_id,
@@ -208,57 +209,63 @@ class ResumoDaCompra(View):
 
 @login_required()
 def conteudo_create(request):
-    form = Postform()
+    if not request.user.has_perm('global_permissions.pode_adicionar_conteudo'):
+        raise PermissionDenied
+    else:
+        form = Postform()
 
-    if request.method == 'POST':
-        form = Postform(request.POST)
+        if request.method == 'POST':
+            form = Postform(request.POST)
 
-        if form.is_valid():
-            post_name = form.cleaned_data['nome']
-            post_descricaocurta = form.cleaned_data['descricao_curta']
-            post_descricaolonga = form.cleaned_data['descricao_longa']
-            post_imagem = form.cleaned_data['imagem']
-            post_precomarketing = form.cleaned_data['preco_marketing']
-            post_precomarketingpromocional = form.cleaned_data['preco_marketing_promocional']
-            post_tipo = form.cleaned_data['tipo']
+            if form.is_valid():
+                post_name = form.cleaned_data['nome']
+                post_descricaocurta = form.cleaned_data['descricao_curta']
+                post_descricaolonga = form.cleaned_data['descricao_longa']
+                post_imagem = form.cleaned_data['imagem']
+                post_precomarketing = form.cleaned_data['preco_marketing']
+                post_precomarketingpromocional = form.cleaned_data['preco_marketing_promocional']
+                post_tipo = form.cleaned_data['tipo']
 
-            new_post = Produto(nome=post_name, descricao_curta=post_descricaocurta, descricao_longa=post_descricaolonga,
-                               imagem=post_imagem,
-                               preco_marketing=post_precomarketing,
-                               preco_marketing_promocional=post_precomarketingpromocional, tipo=post_tipo)
-            new_post.save()
+                new_post = Produto(nome=post_name, descricao_curta=post_descricaocurta, descricao_longa=post_descricaolonga,
+                                   imagem=post_imagem,
+                                   preco_marketing=post_precomarketing,
+                                   preco_marketing_promocional=post_precomarketingpromocional, tipo=post_tipo)
+                new_post.save()
 
-            return redirect('produto:lista')
+                return redirect('produto:lista')
 
-    elif request.method == 'GET':
-        return render(request, 'produto/add_content.html', {'form': form})
+        elif request.method == 'GET':
+            return render(request, 'produto/add_content.html', {'form': form})
 
 
 @login_required()
 def edite_conteudo(request, id):
-    produto = get_object_or_404(Produto, pk=id)
-    form = Postform(instance=produto)
+    if not request.user.has_perm('global_permissions.pode_adicionar_conteudo'):
+        raise PermissionDenied
+    else:
+        produto = get_object_or_404(Produto, pk=id)
+        form = Postform(instance=produto)
 
-    if request.method == 'POST':
-        form = Postform(request.POST, instance=produto)
+        if request.method == 'POST':
+            form = Postform(request.POST, instance=produto)
 
-        if form.is_valid():
-            produto.save()
-            return redirect('produto:lista')
+            if form.is_valid():
+                produto.save()
+                return redirect('produto:lista')
+            else:
+                return render(request, 'produto/edit_content.html', {'form': form, 'produto': produto})
         else:
             return render(request, 'produto/edit_content.html', {'form': form, 'produto': produto})
-    else:
-        return render(request, 'produto/edit_content.html', {'form': form, 'produto': produto})
-
 
 
 @login_required()
 def conteudo_delete(request, id):
-    post = get_object_or_404(Produto, pk=id)
-    post.delete()
+    if not request.user.has_perm('global_permissions.pode_adicionar_conteudo'):
+        raise PermissionDenied
+    else:
+        post = get_object_or_404(Produto, pk=id)
+        post.delete()
 
+        messages.info(request, 'Conteúdo deletado com sucesso')
 
-    messages.info(request, 'Conteúdo deletado com sucesso')
-
-
-    return redirect('produto:lista')
+        return redirect('produto:lista')
