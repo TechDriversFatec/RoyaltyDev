@@ -81,3 +81,13 @@ ul.errorlist li {
 .cart-img {
     max-width: 150px;
 }
+
+/* Messages */
+
+ul.messages{
+    padding: 0;
+}
+
+ul.messages li{
+    list-style: none;
+}

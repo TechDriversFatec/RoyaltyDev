@@ -15,4 +15,6 @@ urlpatterns = [
     path('resumodacompra/', views.ResumoDaCompra.as_view(), name="resumodacompra"),
     path('busca/', views.Busca.as_view(), name="busca"),
     path('criar/', views.conteudo_create, name='conteudo_create'),
+    path('editar/<int:id>/', views.edite_conteudo, name='editar_conteudo'),
+    path('deletar/<int:id>/', views.conteudo_delete, name='conteudo_delete'),
 ]

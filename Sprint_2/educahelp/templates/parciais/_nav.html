@@ -47,12 +47,12 @@
         <ul class="nav navbar-nav navbar-right">
             {% if request.user.is_authenticated %}
             <li class="nav-item">
-                <a class="nav-link" href="{% url 'produto:lista' %}" id="nome"> Olá! {{ request.user }} </a>
+                <a class="nav-link" href="{% url 'produto:lista' %}" id="nome"> <strong> Olá! {{ request.user }} </strong> </a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
-                    Conta
+                    <strong>Conta</strong>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item " href="{% url 'perfil:criar' %}">Perfil</a>
@@ -73,14 +73,14 @@
             {% if request.session.carrinho %}
             <li class="nav-item">
                 <a class="nav-link nav-cart-link active" href="{% url 'produto:carrinho' %}">
-                    <span class="nav-cart-text mr-1">
+                    <span class="nav-cart-text mr-1 text-dark">
 
                     </span>
-                    <span class="nav-cart-count mr-1">
+                    <span class="nav-cart-count mr-1 text-dark">
                         <strong>{{ request.session.carrinho|cart_total_qtd }}x</strong>
                     </span>
-                    <span class="nav-cart-icon mr-2">
-                        <i class="fas fa-shopping-cart"></i>
+                    <span class="nav-cart-icon mr-2 text-dark">
+                        <i class="fas fa-shopping-cart text-dark"></i>
                     </span>
                 </a>
             </li>

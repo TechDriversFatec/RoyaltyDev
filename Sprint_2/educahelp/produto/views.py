@@ -232,3 +232,33 @@ def conteudo_create(request):
 
     elif request.method == 'GET':
         return render(request, 'produto/add_content.html', {'form': form})
+
+
+@login_required()
+def edite_conteudo(request, id):
+    produto = get_object_or_404(Produto, pk=id)
+    form = Postform(instance=produto)
+
+    if request.method == 'POST':
+        form = Postform(request.POST, instance=produto)
+
+        if form.is_valid():
+            produto.save()
+            return redirect('produto:lista')
+        else:
+            return render(request, 'produto/edit_content.html', {'form': form, 'produto': produto})
+    else:
+        return render(request, 'produto/edit_content.html', {'form': form, 'produto': produto})
+
+
+
+@login_required()
+def conteudo_delete(request, id):
+    post = get_object_or_404(Produto, pk=id)
+    post.delete()
+
+
+    messages.info(request, 'Conteúdo deletado com sucesso')
+
+
+    return redirect('produto:lista')

@@ -23,3 +23,12 @@
     })
 })();
 
+
+var searchBtn = $('#search-btn');
+var searchForm = $('#search-form');
+
+
+$(SearchBtn).on('click', function(){
+    SearchForm.submit();
+
+})
