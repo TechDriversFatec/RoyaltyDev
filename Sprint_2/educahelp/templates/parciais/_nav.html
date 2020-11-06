@@ -47,7 +47,7 @@
         <ul class="nav navbar-nav navbar-right">
             {% if request.user.is_authenticated %}
             <li class="nav-item">
-                <a class="nav-link" href="{% url 'produto:lista' %}" id="nome"> Olá! </a>
+                <a class="nav-link" href="{% url 'produto:lista' %}" id="nome"> Olá! {{ request.user }} </a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -55,10 +55,9 @@
                     Conta
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item " href="#">Perfil</a>
+                    <a class="dropdown-item " href="{% url 'perfil:criar' %}">Perfil</a>
                     <a class="dropdown-item " href="{% url 'produto:conteudo_create' %}">Adicionar conteúdo</a>
                     <a class="dropdown-item " href="{% url 'pedido:lista' %}">Meus pedidos</a>
-                    <a class="dropdown-item" href="{% url 'perfil:criar' %}">Atualizar meus dados</a>
                     <a class="dropdown-item" href="{% url 'perfil:logout' %}">Sair</a>
                 </div>
             </li>

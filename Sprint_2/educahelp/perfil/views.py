@@ -122,7 +122,7 @@ class Criar(BasePerfil):
             if autentica:
                 login(self.request, user=usuario)
 
-        self.request.session['carrinho'] = self.carrinho
+        self.request.session['lista'] = self.lista
         self.request.session.save()
 
         messages.success(
@@ -135,7 +135,7 @@ class Criar(BasePerfil):
             'Você fez login e pode concluir sua compra.'
         )
 
-        return redirect('produto:carrinho')
+        return redirect('perfil:lista')
         return self.renderizar
 
 
@@ -170,9 +170,9 @@ class Login(View):
 
         messages.success(
             self.request,
-            'Você fez login no sistema e pode concluir sua compra.'
+            ''
         )
-        return redirect('produto:carrinho')
+        return redirect('produto:lista')
 
 
 class Logout(View):
