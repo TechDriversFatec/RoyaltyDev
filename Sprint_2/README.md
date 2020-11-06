@@ -4,13 +4,23 @@
 
 <h1 align="center">Equipe 2 – EducaHelp</h1>
 
-**Tecnologias utilizadas:**
+**Sobre**<br/>
+Durante o período da Sprint 2 a equipe teve como foco a criação do front-end e do back-end, possibilitando então, visualizar como será a interação do cliente com a plataforma, e a criação dos conteúdos que serão disponibilizados para compra
 
-1. HTML;
+**Desenvolvido**
 
-1. Bootstrap;
+* Páginas de conteúdos;
+* Página para edição de dados do usuário;
+* Conteúdos (escritos);
+* Conteúdos (vídeos);
+* Carrinho de compras;
+* Login/Cadastro;
+* Sistema de compras
 
-1. Python;
-
-1. Django;
-
+**Tecnologias**
+* HTML;
+* CSS;
+* JavaScript;
+* Bootstrap;
+* Django;
+* Python
