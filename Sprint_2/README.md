@@ -30,7 +30,7 @@ Durante o período da Sprint 2 a equipe teve como foco a criação do front-end 
 
 
 # Visão do administrador e sistema de busca
-<img src="https://raw.githubusercontent.com/RoyaltyDev/Projeto_integrador_2020-2/master/Sprint_2/files/Visao%20administrador.gif" width="900" height="600" />
+<img src="https://github.com/RoyaltyDev/Projeto_integrador_2020-2/blob/master/Sprint_2/files/Adm%20view.gif" width="900" height="600" />
 
 
 # Burndown
