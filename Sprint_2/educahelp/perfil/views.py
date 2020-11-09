@@ -122,7 +122,7 @@ class Criar(BasePerfil):
             if autentica:
                 login(self.request, user=usuario)
 
-        self.request.session['lista'] = self.lista
+        self.request.session['carrinho'] = self.lista
         self.request.session.save()
 
         messages.success(
@@ -139,7 +139,7 @@ class Criar(BasePerfil):
         return self.renderizar
 
 
-class Atualizar(View):
+class Atualizar1(View):
     def get(self, *args, **kwargs):
         return HttpResponse('Atualizar')
 
@@ -185,3 +185,10 @@ class Logout(View):
         self.request.session.save()
 
         return redirect('produto:lista')
+
+def atualizar(request):
+    return render(request, 'perfil/criar2.html')
+
+   
+       
+        

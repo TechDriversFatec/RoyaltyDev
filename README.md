@@ -79,15 +79,19 @@ Com os seguintes requisitos:
 
 # Planejamento de Sprints
 
-<h1 align="center"><img src = "/imagens/Blue Timeline Cycle Presentation.png" width="2000" height="1000" /></h1>
+<h1 align="center"><img src = "/imagens/Preto e Amarelo Atendimento de Emergência Cartaz.png" width="900" height="1000" /></h1>
 
 # Cards
 
+<<<<<<< HEAD
 <h1 align="center"><img src = "/imagens/Negrito Retrô Arco-Íris Fim de Semana do Orgulho LGBT Cartaz.png" width="1200" height="1500" /></h1>
+=======
+<h1 align="center"><img src = "/imagens/Negrito Retrô Arco-Íris Fim de Semana do Orgulho LGBT Cartaz.png" width="900" height="1000" /></h1>
+>>>>>>> fb9f92733ba8c1143a446500ede1fbb5672fd400
 
 # Backlog
 
-<h1 align="center"><img src="/imagens/Preto Laranja e Amarelo Simples Gráfico de Prós e Contras Cartaz.png" width="600" height="800"/></h1>
+<h1 align="center"><img src="/imagens/Preto Laranja e Amarelo Simples Gráfico de Prós e Contras Cartaz.png" width="900" height="1000"/></h1>
 
 # Requisitos
 
