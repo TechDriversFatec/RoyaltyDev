@@ -79,7 +79,7 @@ Com os seguintes requisitos:
 
 # Planejamento de Sprints
 
-<h1 align="center"><img src = "/imagens/Blue Timeline Cycle Presentation.png" width="2000" height="800" /></h1>
+<h1 align="center"><img src = "/imagens/Preto e Amarelo Atendimento de Emergência Cartaz.png" width="900" height="1000" /></h1>
 
 # Cards
 
