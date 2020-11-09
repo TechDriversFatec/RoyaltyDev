@@ -83,7 +83,7 @@ Com os seguintes requisitos:
 
 # Cards
 
-<h1 align="center"><img src = "/imagens/Negrito Retrô Arco-Íris Fim de Semana do Orgulho LGBT Cartaz.png" width="1200" height="1200" /></h1>
+<h1 align="center"><img src = "/imagens/Negrito Retrô Arco-Íris Fim de Semana do Orgulho LGBT Cartaz.png" width="900" height="1000" /></h1>
 
 # Backlog
 
