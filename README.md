@@ -87,7 +87,7 @@ Com os seguintes requisitos:
 
 # Backlog
 
-<h1 align="center"><img src="/imagens/Preto Laranja e Amarelo Simples Gráfico de Prós e Contras Cartaz.png" width="600" height="800"/></h1>
+<h1 align="center"><img src="/imagens/Preto Laranja e Amarelo Simples Gráfico de Prós e Contras Cartaz.png" width="900" height="1000"/></h1>
 
 # Requisitos
 
