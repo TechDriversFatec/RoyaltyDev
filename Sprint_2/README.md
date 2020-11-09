@@ -24,3 +24,15 @@ Durante o período da Sprint 2 a equipe teve como foco a criação do front-end 
 * Bootstrap;
 * Django;
 * Python
+
+# Sistema de compras e autenticação
+<img src="/files/Sistemas de compras e autenticação.gif" width="900" height="600" />
+
+
+# Visão do administrador e sistema de busca
+<img src="/files/Visao administrador.gif" width="900" height="600" />
+
+
+# Burndown
+
+<img src="/burndown sprint 2.png" width="900" height="600" />
