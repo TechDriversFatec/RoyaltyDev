@@ -79,11 +79,11 @@ Com os seguintes requisitos:
 
 # Planejamento de Sprints
 
-<h1 align="center"><img src = "/imagens/Blue Timeline Cycle Presentation.png" width="1500" height="1000" /></h1>
+<h1 align="center"><img src = "/imagens/Blue Timeline Cycle Presentation.png" width="2000" height="1000" /></h1>
 
 # Cards
 
-<h1 align="center"><img src = "/imagens/Negrito Retrô Arco-Íris Fim de Semana do Orgulho LGBT Cartaz.png" width="1000" height="2000" /></h1>
+<h1 align="center"><img src = "/imagens/Negrito Retrô Arco-Íris Fim de Semana do Orgulho LGBT Cartaz.png" width="1200" height="1800" /></h1>
 
 # Backlog
 
