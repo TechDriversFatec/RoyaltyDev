@@ -26,13 +26,13 @@ Durante o período da Sprint 2 a equipe teve como foco a criação do front-end 
 * Python
 
 # Sistema de compras e autenticação
-<img src="/files/Sistemas de compras e autenticação.gif" width="900" height="600" />
+<img src="https://raw.githubusercontent.com/RoyaltyDev/Projeto_integrador_2020-2/master/Sprint_2/files/Sistema%20de%20compras%20e%20autentica%C3%A7%C3%A3o.gif" width="900" height="600" />
 
 
 # Visão do administrador e sistema de busca
-<img src="/files/Visao administrador.gif" width="900" height="600" />
+<img src="https://raw.githubusercontent.com/RoyaltyDev/Projeto_integrador_2020-2/master/Sprint_2/files/Visao%20administrador.gif" width="900" height="600" />
 
 
 # Burndown
 
-<img src="/burndown sprint 2.png" width="900" height="600" />
+<img src="https://raw.githubusercontent.com/RoyaltyDev/Projeto_integrador_2020-2/master/Sprint_2/burndown%20sprint%202.png" width="900" height="600" />
