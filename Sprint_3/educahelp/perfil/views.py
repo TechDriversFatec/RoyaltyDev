@@ -189,6 +189,8 @@ class Logout(View):
 def atualizar(request):
     return render(request, 'perfil/criar2.html')
 
+def Contato(request):
+    return render(request, 'parciais/contato.html')
    
        
         

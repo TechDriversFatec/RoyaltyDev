@@ -269,3 +269,5 @@ def conteudo_delete(request, id):
         messages.info(request, 'Conteúdo deletado com sucesso')
 
         return redirect('produto:lista')
+
+
