@@ -9,3 +9,13 @@ def aboutUs(request):
 
 def linkedIn(request):
     return render(request, 'linkedin.html')
+
+def facebook(request):
+    return render(request, 'facebook.html')
+
+def instagram(request):
+    return render(request, 'Instagram.html')
+
+def twitter(request):
+    return render(request, 'twitter.html')
+
