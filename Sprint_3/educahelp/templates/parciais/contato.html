@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    {% include 'parciais/_head.html' %}
+    <title>{% block titulo %}{% endblock %}</title>
+    
+</head>
+<style>
+
+.ret1 {
+    position: absolute;
+    width: 300px;
+    height: 45px;
+    left: 15.5px;
+
+
+
+
+
+    background: #FFCC00;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.tx1{
+    position: absolute;
+    width: 185px;
+    height: 60px;
+    left: 90px;
+    top: 12px;
+
+
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 15px;
+    line-height: 12px;
+
+    color: #000000;
+
+}
+
+
+
+
+</style>
+
+<body>
+    {% include 'parciais/_nav.html' %}
+    
+        {% include 'parciais/_messages.html' %}
+        {% block conteudo %}{% endblock %}
+    </main>
+    <div id="rectangle" class='ret1'><a class="tx1">Fale com os desenvolvedores:</a></div>
+    <br>
+    <br>
+    <div class="col-lg mt-3">
+        
+    <p>
+        Guilherme Cleyton Pereira (Scrum Master) – Git Hub, LinkedIn;
+    </p>
+    <p>
+        Danielle Brito Evangelista – Git Hub, LinkedIn;
+    </p>
+    <p>
+        Elias Ferreira de Faria - Git Hub, LinkedIn;
+    </p>
+    <p>
+        Lucas Cesar Andrade Prado – Git Hub, LinkedIn;
+
+    </p>
+    <p>
+        Marcus Vinicius Augusto Rocha – Git Hub, LinkedIn.
+    </p>
+
+
+
+
+
+    </div>
+    {% include 'parciais/_footer.html' %}
+
+    
+</body>
+
+</html>
