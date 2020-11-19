@@ -84,13 +84,15 @@
     <br>
     <br>
 </div>
+<div class="container">
 {% if perms.global_permissions.pode_adicionar_conteudo %}
 <a href="{% url 'produto:conteudo_create' %}">
 <div class="col-2 add-div mb-4">
-    <i class="fas fa-plus"></i> Novo conteúdo
+  <button class="btn btn-primary "><i class="fas fa-plus"></i> Novo conteúdo</button> 
 </div>
 </a>
 {% endif %}
+</div>
 <main class="container mt-4 mb-4">
 <div class="row">
     <div class="col-lg-12">
