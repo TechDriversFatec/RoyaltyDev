@@ -38,8 +38,9 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <form class="form-inline" method="GET" action="{% url 'produto:busca' %}" style="margin-left: 10%;">
-        <input name="termo" value="{{ request.GET.termo }}" class="form-control" type="search"
+    <form class="form-inline" method="GET" action="{% url 'produto:busca' %}" style="margin-left: 30%;">
+        <input name="termo" value="{{ request.GET.termo }}" class="form-control" type="search" style="min-width:300px;"
+
             placeholder="Busca" aria-label="Busca">
         <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
     </form>
