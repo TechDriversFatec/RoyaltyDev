@@ -141,7 +141,7 @@ class Criar(BasePerfil):
 
 class Atualizar1(View):
     def get(self, *args, **kwargs):
-        return HttpResponse('Atualizar')
+        return redirect('Atualizar')
 
 
 class Login(View):
@@ -191,6 +191,3 @@ def atualizar(request):
 
 def Contato(request):
     return render(request, 'parciais/contato.html')
-   
-       
-        
