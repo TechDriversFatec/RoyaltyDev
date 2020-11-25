@@ -1,12 +1,21 @@
 <style>
 
-.button1 {
-color: #000000;
-border-color: #ffcc00;
-background-color: #ffcc00;
-box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
-}
+        .button1 {
+        color: #000000;
+        border-color: #ffcc00;
+        background-color: #ffcc00;
+        box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+        }
 
+        .button2 {
+        color: #000000;
+        border-color: #ffcc00;
+        background-color: #ffcc00;
+        box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+        }
+        h3{
+            text-align: center;
+        }
 </style>
 
 <head>
@@ -21,20 +30,24 @@ box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
     </main>
 <div class="container">  
  <div class="col-lg mt-3">
-        
     
-    <h4>Seus Dados:</h4>
+    <h3>Seus Dados:</h3>
+    {% if perms.global_permissions.pode_adicionar_conteudo %}
+    <div class="col-lg-12" style="text-align: right;">   
+        <a href=""><button class="button2">Relátorio</button></a>
+        </div> 
+    {% endif %}
     <p>
-        Primeiro Nome: {{user.first_name}}
+        <strong> Nome: </strong>{{user.first_name}}
     </p>
     <p>
-        Ultimo Nome: {{user.last_name}}
+       <strong> Ultimo Nome:</strong> {{user.last_name}}
     </p>
     <p>
-        Usuário: {{user}}
+       <strong> Usuário: </strong>{{user}}
     </p>
     <p>
-        Email: {{ user.email }}
+       <strong> Email: </strong>{{ user.email }}
     </p>
     <a href="{% url 'perfil:atualizar' %}"><button class='button1'>Editar </button></a>
 <br>
