@@ -1,4 +1,4 @@
-from django.shortcuts import redirect, reverse
+from django.shortcuts import redirect, reverse, render
 from django.views.generic import ListView, DetailView
 from django.views import View
 # from django.http import HttpResponse
@@ -138,3 +138,6 @@ class Lista(DispatchLoginRequiredMixin, ListView):
     template_name = 'pedido/lista.html'
     paginate_by = 10
     ordering = ['-id']
+
+def Confirmado(request):
+    return render(request, 'pedido/confirmado.html')
