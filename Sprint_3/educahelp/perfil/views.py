@@ -9,6 +9,7 @@ import copy
 
 from . import models
 from . import forms
+from .models import Perfil
 
 
 class BasePerfil(View):
@@ -141,7 +142,7 @@ class Criar(BasePerfil):
 
 class Atualizar1(View):
     def get(self, *args, **kwargs):
-        return redirect('Atualizar')
+        return redirect('perfil:atualizar')
 
 
 class Login(View):
@@ -187,7 +188,11 @@ class Logout(View):
         return redirect('produto:lista')
 
 def atualizar(request):
-    return render(request, 'perfil/criar2.html')
+    return render(request, 'perfil/atualizar.html')
 
 def Contato(request):
     return render(request, 'parciais/contato.html')
+
+
+def Relatorio(request):
+    return render(request, 'perfil/relatorio.html')
