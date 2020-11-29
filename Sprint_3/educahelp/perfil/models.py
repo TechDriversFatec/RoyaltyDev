@@ -6,6 +6,7 @@ import re
 from utils.validacpf import valida_cpf
 
 
+
 class Perfil(models.Model):
     usuario = models.OneToOneField(User, on_delete=models.CASCADE,
                                    verbose_name='Usuário')
@@ -80,3 +81,5 @@ class Perfil(models.Model):
     class Meta:
         verbose_name = 'Perfil'
         verbose_name_plural = 'Perfis'
+
+

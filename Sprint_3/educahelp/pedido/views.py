@@ -1,13 +1,14 @@
 from django.shortcuts import redirect, reverse, render
 from django.views.generic import ListView, DetailView
 from django.views import View
-# from django.http import HttpResponse
+from django.http import HttpResponse
 from django.contrib import messages
-
+from django.contrib.auth.decorators import login_required
 from produto.models import Variacao
 from .models import Pedido, ItemPedido
 
 from utils import utils
+import csv
 
 
 class DispatchLoginRequiredMixin(View):
@@ -141,3 +142,16 @@ class Lista(DispatchLoginRequiredMixin, ListView):
 
 def Confirmado(request):
     return render(request, 'pedido/confirmado.html')
+
+@login_required()
+def export(request):
+    response = HttpResponse(content_type='text/csv')
+    writer = csv.writer(response)
+    writer.writerow(['Pedido', 'Produto', 'Quantidade', 'Preco'])
+
+    for itempedido in ItemPedido.objects.all().values_list('pedido', 'produto', 'quantidade', 'preco'):
+        writer.writerow(itempedido)
+
+    response['Content-Disposition'] = 'attachment; filename="relatorio.csv"'
+
+    return response
