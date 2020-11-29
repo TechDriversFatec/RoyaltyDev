@@ -973,7 +973,9 @@
 {% block conteudo %}
 <div class="container">
 <h3 class="mb-0" style="text-align: center;">Minha Conta</h3>
-<a href="{% url 'perfil:relatorio' %}" class="btn btn-sm btn-primary" style="float: right; margin-left: 8px;" >Relatório</a>
+{% if perms.global_permissions.pode_adicionar_conteudo %}
+<a href="{% url 'perfil:relatorio' %}" class="btn btn-sm btn-primary" style="float: right; margin-left: 8px;" target="__blank">Relatório</a>
+{% endif %}
 <a href="{% url 'perfil:atualizar' %}" class="btn btn-sm btn-primary" style="float: right;">Editar</a>
 <div class="card-body">
 <form>
