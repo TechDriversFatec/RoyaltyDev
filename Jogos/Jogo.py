@@ -8,7 +8,7 @@ class Janela (QMainWindow):
         self.topo = 100
         self.esquerda = 100
         self.largura = 800
-        self.altura = 600
+        self.altura = 350
         self.titulo = "Primeira Janela"
 
         self.caixa_texto = QLineEdit(self)  # caixa de texto
@@ -21,32 +21,32 @@ class Janela (QMainWindow):
         botao1.setStyleSheet('QPushButton {background-color:#5F3992;font:bold;fonte-size:20px}')
         botao1.clicked.connect(self.botao1_click)
 
-        botao_caixa = QPushButton('Enviar texto', self)
+        botao_caixa = QPushButton('imprimir código', self)
         botao_caixa.move(550, 200)
         botao_caixa.resize(120, 80)
         botao_caixa.setStyleSheet('QPushButton {background-color:#5F3992;font:bold;fonte-size:20px}')
         botao_caixa.clicked.connect(self.mostra_texto)
 
-        botao2 = QPushButton('botao 2', self)
+        botao2 = QPushButton('else', self)
         botao2.move(350, 200)
         botao2.resize(120, 80)
         botao2.setStyleSheet('QPushButton {background-color:#5F3992;font:bold;fonte-size:20px}')
         botao2.clicked.connect(self.botao2_click)
         self.label1_1 = QLabel(self)
-        self.label1_1.setText("Qual comando é utilizado para imprimir uma mensagem na tela?")
+        self.label1_1.setText("Qual comando é utilizado: print ou else?")
         self.label1_1.move(50,50)
         self.label1_1.setStyleSheet('QLabel {font:bold;font-size:25px;color:"blue"}')
-        self.label1_1.resize(400,25)
+        self.label1_1.resize(800,40)
 
         self.label1_caixa = QLabel(self)
-        self.label1_caixa.setText("Digitou:")
-        self.label1_caixa.move(450, 50)
+        self.label1_caixa.setText("Crie um programa que imprima uma mensagem")
+        self.label1_caixa.move(50, 100)
         self.label1_caixa.setStyleSheet('QLabel {font:bold;font-size:25px;color:"blue"}')
-        self.label1_caixa.resize(400, 25)
+        self.label1_caixa.resize(1000, 60)
 
         self.carro = QLabel(self)
         self.carro.move(50, 400)
-        self.carro.setPixmap(QtGui.QPixmap('carro1.png'))
+        
         self.carro.resize(450, 200)
         self.CarregarJanela()
 
@@ -56,9 +56,9 @@ class Janela (QMainWindow):
         self.show()
 
     def botao1_click(self):
-        self.label1_1.setText('Carro 1 selecionado!')
-        self.label1_1.setStyleSheet('QLabel {font:bold;font-size:25px;color:"red"}')
-        self.carro.setPixmap(QtGui.QPixmap('carro1.png'))
+        self.label1_1.setText("Você acertou! ex: print('olá mundo')")
+        self.label1_1.setStyleSheet('QLabel {font:bold;font-size:25px;color:"green"}')
+        
 
     def mostra_texto(self):
         conteudo = self.caixa_texto.text()
@@ -66,9 +66,9 @@ class Janela (QMainWindow):
 
 
     def botao2_click(self):
-        self.label1_1.setText('Carro 2 selecionado!')
-        self.label1_1.setStyleSheet('QLabel {font:bold;font-size:25px;color:"yellow"}')
-        self.carro.setPixmap(QtGui.QPixmap('carro2.png'))
+        self.label1_1.setText('Acho que não')
+        self.label1_1.setStyleSheet('QLabel {font:bold;font-size:25px;color:"red"}')
+        
 
 
 aplicacao = QApplication(sys.argv)
