@@ -63,7 +63,6 @@
                     {% if perms.global_permissions.pode_adicionar_conteudo %}
                     <a class="dropdown-item " href="http://localhost:8000/admin/produto/produto/add/" target="__blank">Adicionar conteúdo</a>
                     <a class="dropdown-item" href="{% url 'pedido:export' %}">Baixar Relatório</a>
-                    <a href="{% url 'perfil:relatorio' %}" class="dropdown-item " target="__blank">Relatório</a>
                     {% endif %}
                     <a class="dropdown-item " href="{% url 'pedido:lista' %}">Meus pedidos</a>
                     <a class="dropdown-item" href="{% url 'perfil:logout' %}">Sair</a>

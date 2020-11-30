@@ -52,7 +52,7 @@ class BasePerfil(View):
         self.perfilform = self.contexto['perfilform']
 
         if self.request.user.is_authenticated:
-            self.template_name = 'perfil/criar.html'
+            self.template_name = 'perfil/account.html'
 
         self.renderizar = render(
             self.request, self.template_name, self.contexto)
