@@ -1,5 +1,9 @@
 from django.db import models
 from django.contrib.auth.models import User
+from matplotlib import pyplot as plt
+import io
+import numpy as np
+
 
 
 class Pedido(models.Model):
@@ -40,3 +44,20 @@ class ItemPedido(models.Model):
     class Meta:
         verbose_name = 'Item do pedido'
         verbose_name_plural = 'Itens do pedido'
+
+
+def relatorio(request):
+    dados = 'utils/relatorio.csv'
+    x = [1, 4, 6]
+    y = [2, 4, 9, 16]
+
+    titulo = "Relatório de Vendas"
+    eixox = "Produto"
+    eixoy = "Vendas"
+
+    grafico = plt.title(titulo)
+    grafico = plt.xlabel(eixox)
+    grafico = plt.ylabel(eixoy)
+    grafico = plt.plot(x, y)
+    grafico = plt.savefig('media/grafico/graficos.png', dpi=1200)
+    return render(request, 'perfil/relatorio.html', {'dados': dados, 'grafico': grafico})
