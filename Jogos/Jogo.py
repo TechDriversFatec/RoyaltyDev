@@ -15,7 +15,7 @@ class Janela (QMainWindow):
         self.caixa_texto.move(25,20)
         self.caixa_texto.resize(200,30)
 
-        botao1 = QPushButton('botao 1', self)
+        botao1 = QPushButton('print', self)
         botao1.move(150,200)
         botao1.resize(120,80)
         botao1.setStyleSheet('QPushButton {background-color:#5F3992;font:bold;fonte-size:20px}')
@@ -33,7 +33,7 @@ class Janela (QMainWindow):
         botao2.setStyleSheet('QPushButton {background-color:#5F3992;font:bold;fonte-size:20px}')
         botao2.clicked.connect(self.botao2_click)
         self.label1_1 = QLabel(self)
-        self.label1_1.setText("Aperte um botão")
+        self.label1_1.setText("Qual comando é utilizado para imprimir uma mensagem na tela?")
         self.label1_1.move(50,50)
         self.label1_1.setStyleSheet('QLabel {font:bold;font-size:25px;color:"blue"}')
         self.label1_1.resize(400,25)
