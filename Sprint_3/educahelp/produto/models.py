@@ -74,6 +74,8 @@ class Variacao(models.Model):
     preco = models.FloatField()
     preco_promocional = models.FloatField(default=0)
     estoque = models.PositiveIntegerField(default=1)
+    imagem = models.ImageField(
+        upload_to='media/produto_imagens/%Y/%m/', blank=True, null=True)
 
     def __str__(self):
         return self.nome or self.produto.nome

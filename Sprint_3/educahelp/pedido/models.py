@@ -1,8 +1,10 @@
 from django.db import models
 from django.contrib.auth.models import User
 from matplotlib import pyplot as plt
+from pylab import *
+# import PIL, PIL.Image, StringIO
 import io
-import numpy as np
+
 
 
 
@@ -46,18 +48,24 @@ class ItemPedido(models.Model):
         verbose_name_plural = 'Itens do pedido'
 
 
-def relatorio(request):
-    dados = 'utils/relatorio.csv'
-    x = [1, 4, 6]
-    y = [2, 4, 9, 16]
+# def relatorio(request):
+#      Construct the graph
+#     x = arange(0, 2*pi, 0.01)
+#     s = cos(x)**2
+#     plot(x, s)
 
-    titulo = "Relatório de Vendas"
-    eixox = "Produto"
-    eixoy = "Vendas"
+#     xlabel('xlabel(X)')
+#     ylabel('ylabel(Y)')
+#     title('Simple Graph!')
+#     grid(True)
 
-    grafico = plt.title(titulo)
-    grafico = plt.xlabel(eixox)
-    grafico = plt.ylabel(eixoy)
-    grafico = plt.plot(x, y)
-    grafico = plt.savefig('media/grafico/graficos.png', dpi=1200)
-    return render(request, 'perfil/relatorio.html', {'dados': dados, 'grafico': grafico})
+#     Store image in a string buffer
+#     buffer = StringIO.StringIO()
+#     canvas = pylab.get_current_fig_manager().canvas
+#     canvas.draw()
+#     pilImage = PIL.Image.fromstring("RGB", canvas.get_width_height(), canvas.tostring_rgb())
+#     pilImage.save(buffer, "PNG")
+#     pylab.close()
+
+#     Send buffer in a http response the the browser with the mime type image/png set
+#     return HttpResponse(buffer.getvalue(), mimetype="image/png")
