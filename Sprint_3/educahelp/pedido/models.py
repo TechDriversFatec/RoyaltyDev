@@ -1,9 +1,9 @@
 from django.db import models
 from django.contrib.auth.models import User
-from matplotlib import pyplot as plt
-from pylab import *
+# from matplotlib import pyplot as plt
+# from pylab import *
 # import PIL, PIL.Image, StringIO
-import io
+# import io
 
 
 
