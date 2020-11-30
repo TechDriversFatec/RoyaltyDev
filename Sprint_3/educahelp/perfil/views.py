@@ -6,9 +6,10 @@ from django.http import HttpResponse
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 import copy
-
+from django.contrib.auth.decorators import login_required
 from . import models
 from . import forms
+from .models import Perfil
 
 
 class BasePerfil(View):
@@ -51,7 +52,7 @@ class BasePerfil(View):
         self.perfilform = self.contexto['perfilform']
 
         if self.request.user.is_authenticated:
-            self.template_name = 'perfil/account.html'
+            self.template_name = 'perfil/criar.html'
 
         self.renderizar = render(
             self.request, self.template_name, self.contexto)
@@ -141,7 +142,7 @@ class Criar(BasePerfil):
 
 class Atualizar1(View):
     def get(self, *args, **kwargs):
-        return redirect('Atualizar')
+        return redirect('perfil:atualizar')
 
 
 class Login(View):
@@ -187,7 +188,11 @@ class Logout(View):
         return redirect('produto:lista')
 
 def atualizar(request):
-    return render(request, 'perfil/criar2.html')
+    return render(request, 'perfil/atualizar.html')
 
 def Contato(request):
     return render(request, 'parciais/contato.html')
+
+@login_required()
+def Relatorio(request):
+    return render(request, 'perfil/relatorio.html')
