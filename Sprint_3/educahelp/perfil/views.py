@@ -196,3 +196,12 @@ def Contato(request):
 @login_required()
 def Relatorio(request):
     return render(request, 'perfil/relatorio.html')
+
+def Interface(request):
+    return render(request, 'produto/visualizador.html')
+
+def Meus_pedidos(request):
+    return render(request, 'produto/meuspedidos.html')
+
+def Interface2(request):
+    return render(request, 'produto/visualizador2.html')

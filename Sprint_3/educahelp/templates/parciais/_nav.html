@@ -48,6 +48,9 @@
         <ul class="nav navbar-nav navbar-right">
             {% if request.user.is_authenticated %}
             <li class="nav-item">
+                <a class="nav-link" href="{% url 'perfil:meus_pedidos' %}" id="nome"> <strong> Meus Conteúdos </strong> </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="{% url 'produto:lista' %}" id="nome"> <strong> Olá! {{ request.user }} </strong> </a>
             </li>
             <li class="nav-item dropdown">
