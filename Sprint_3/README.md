@@ -36,3 +36,6 @@ Durante o período da Sprint 3 a equipe teve como foco a criação do front-end 
 # Site na visão do Administrador
 <img src="https://github.com/RoyaltyDev/Projeto_integrador_2020-2/blob/master/imagens/professor_func.gif" width="900" height="600" />
 
+# Jogo
+<img src="https://raw.githubusercontent.com/RoyaltyDev/Projeto_integrador_2020-2/master/imagens/jogo.gif" width="832" height="360" />
+
