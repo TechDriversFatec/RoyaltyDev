@@ -73,7 +73,7 @@ Com os seguintes requisitos:
 
 :white_check_mark: [Sprint 2](https://github.com/RoyaltyDev/Projeto_integrador_2020-2/tree/master/Sprint_2);
 
-:black_square_button: Sprint 3;
+:white_check_mark: [Sprint 3]();
 
 
 # Planejamento de Sprints
